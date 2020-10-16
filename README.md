@@ -1,2 +1,2 @@
 # PowerBI
- Repositorio criado para compartilhar material sobre o Powerbi
+repository with links and files for using Power BI
