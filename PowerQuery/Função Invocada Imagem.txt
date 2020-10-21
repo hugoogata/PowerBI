@@ -1,7 +1,11 @@
 /*
 Função Invocada para importar Imagens - PTBR
-Desenvolvido: Hugo Kenzo Ogata
+Autor do Repositorio: Hugo Kenzo Ogata
+Dica: Canal Planilheiros - URL:https://www.youtube.com/watch?v=7FxJeY6UMjA&t=157s
 Ultima atualização: 20-10-2020
+Descrição: Essa é uma função para transformar imagens binarias em string de texto. 
+   Situação quando importamos queremos exibir imagens em nossos relatorios e tentarmos importar atraves do powerquery 
+   indepedente do formato o powerqury os lera como binaria, logo não consigo gerar uma imagem.
 */
 
 let

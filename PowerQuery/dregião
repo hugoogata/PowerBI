@@ -1,0 +1,12 @@
+/*
+dregião Versão 1.0 - PTBR
+Desenvolvido: Hugo Kenzo Ogata
+Ultima atualização: 20-10-2020
+Descrição: Essa é uma tabela dimensão simples com os seguintes dados: Estado, Sigla. Capital e Região.
+*/
+
+let
+    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("bVPBcpswEP0Vxuf0I4DYtJ4QM+DxJZPDGra2MkJiJOghf5P21INP7h/ox7or2Q7gXHZAevt239vVy8sirg0uHhZxSqEUOkoMqFrTz7M2PS5eHwgi4aDBMuqJQg41CncOkAbtFdVC5z4YVATQ5XfE08K7VoEo9xgFg51AEjgKoJMkplCB/AWNNvNKKYLx1OmSwoqSQeI7zGGPwvZG9DpaYYMGJN0/rpjbgHUn6eukqHqjv21uSUvbuZPPqkD17MOyorATvTsbn1INnyUyLdwHK8g2HOjvt/qaNwfy9ej+MGPuxdF39DS4k533nQNVz4y21oO3TDcI2AfJ98Q3dNRQ1wPrzLnnFNqOr0A1+GWmoFlEGVkjuIc8Y29Q6ui7NoIG1eNMbXGxvYgD0v1tJ8Oje3CnPesvEgprzRoLpNbuhsNYFdhKL5A8F/vgrwwINAra/eCXseBJl1iLn3jHJIBcZMwPCls0aEnYHMWr3WC0BoXCMGO5viz85HQsly+De2xskEkpz0wNvd+nuxKf+DCIkgdRUKqOYokHgyOBpVaN+xf2pdzccDuUx+n7KzWNqPUw9irREO1ot2EC4nWFKKXGTJBf8YteSZolGX3utPRTvhb361fAIL3q4rqQt5ORDxWag+h85zyF2NDTfhvm6re6pg6E4iJbrwZkC6PX/fof", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Estado = _t, Sigla = _t, Capital = _t, Região = _t]),
+    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Estado", type text}, {"Sigla", type text}, {"Capital", type text}, {"Região", type text}})
+in
+    #"Tipo Alterado"

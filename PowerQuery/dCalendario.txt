@@ -1,7 +1,10 @@
 /*
-Tabela Dimensão Calenadrio - PTBR
+Tabela Dimensão Calendario - PTBR
+Autor do Repositorio: Hugo Kenzo Ogata
 Desenvolvido: Hugo Kenzo Ogata
 Ultima atualização: 19-10-2020
+Descrição: Essa é uma tabela dimensão Calendario com passo a passo no power query.
+Existem diversas maneiras para construir a dCalendario.
 */
 
 let
