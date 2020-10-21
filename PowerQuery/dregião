@@ -3,6 +3,8 @@ dregião Versão 1.0 - PTBR
 Desenvolvido: Hugo Kenzo Ogata
 Ultima atualização: 20-10-2020
 Descrição: Essa é uma tabela dimensão simples com os seguintes dados: Estado, Sigla. Capital e Região.
+Existem diversas maneiras e formas para construir a essa tabela.
+Os dados foram construido manualmente inserindo apartir de dados do próprio IBGE.
 */
 
 let

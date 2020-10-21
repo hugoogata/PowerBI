@@ -1,0 +1,45 @@
+
+/*
+Tabela Dimensão Calendario - EN-US
+Autor do Repositorio: Hugo Kenzo Ogata
+Desenvolvido: Hugo Kenzo Ogata
+Ultima atualização: 19-10-2020
+Descrição: Essa é uma tabela dimensão Calendario ou tambem conhecida com dimCalendar em inglês com passo a passo no power query.
+Existem diversas maneiras e formas para construir a dCalendario.
+*/
+
+let
+    DateMin = Date.FromText("01/01/2019"), //List.Min(List.Buffer(ftSales[OrderDate] & ftReturns[OrderDate])),
+    DateMax = Date.FromText("31/12/2020"), //List.Max(List.Buffer(ftSales[OrderDate] & ftReturns[OrderDate])),
+    YearMin = Date.Year(DateMin),
+    YearMax = Date.Year(DateMax),
+    StartDate = #date(YearMin,1,1),
+    EndDate = #date(YearMax,12,31),
+    Duration = Duration.Days(EndDate - StartDate) + 1,
+    ListDates = List.Sort(List.Dates(StartDate, Duration, #duration(1,0,0,0)), Order.Ascending),
+    ListDatesToTable = Table.FromList(ListDates, Splitter.SplitByNothing(), {"Date"}, null, ExtraValues.Error),
+    ColumnIndex = Table.AddIndexColumn(ListDatesToTable, "Index", 1, 1),
+    ChangeType = Table.TransformColumnTypes(ColumnIndex,{{"Date", type date}, {"Index", Int64.Type}}),
+    ReorderColumns = Table.Buffer(Table.ReorderColumns(ChangeType,{"Index", "Date"})),
+    ColumnYear = Table.AddColumn(ReorderColumns, "Year", each Date.Year([Date]), Int64.Type),
+    ColumnMonth = Table.AddColumn(ColumnYear, "Month", each Date.Month([Date]), Int64.Type),
+    ColumnDay = Table.AddColumn(ColumnMonth, "Day", each Date.Day([Date]), Int64.Type),
+    ColumnDaysInMonth = Table.AddColumn(ColumnDay, "DaysInMonth", each  Date.DaysInMonth([Date]), Int64.Type),
+    ColumnMonthName = Table.AddColumn(ColumnDaysInMonth, "MonthName", each Text.Proper(Date.MonthName([Date], "en-US")), type text),
+    ColumnShortMonthName = Table.AddColumn(ColumnMonthName, "ShortMonthName", each Text.Proper(Date.ToText([Date],"MMM", "en-US")), type text),
+    ColumnDayOfWeek = Table.AddColumn(ColumnShortMonthName, "DayOfWeek", each Date.DayOfWeek([Date]), Int64.Type),
+    ColumnBusinessDay = Table.AddColumn(ColumnDayOfWeek, "BusinessDay", each if not List.Contains({0,6}, [DayOfWeek]) then true else false, type logical),
+    ColumnDayOfWeekName = Table.AddColumn(ColumnBusinessDay, "DayOfWeekName", each Text.Proper(Date.DayOfWeekName([Date], "en-US")), type text),
+    ColumnDayOfWeekShortName = Table.AddColumn(ColumnDayOfWeekName, "DayOfWeekShortName", each Text.Proper(Date.ToText([Date],"ddd", "en-US")), type text),
+    ColumnDayMonth= Table.AddColumn(ColumnDayOfWeekShortName, "Day/Month", each Date.ToText([Date], "dd/MM"), type text),
+    ColumnMonthYear= Table.AddColumn(ColumnDayMonth, "Month/Year", each Date.ToText([Date], "MM/yyyy"), type text),
+    ColumnMonthNameYear = Table.AddColumn(ColumnMonthYear, "MonthName/Year", each Text.Proper(Date.ToText([Date], "MMMM/yyyy", "en-US")), type text),
+    ColumnWeekOfMonth = Table.AddColumn(ColumnMonthNameYear, "WeekOfMonth", each Date.WeekOfMonth([Date]), Int64.Type),
+    ColumnWeekOfYear = Table.AddColumn(ColumnWeekOfMonth, "WeekOfYear", each Date.WeekOfYear([Date]), Int64.Type),
+    ColumnTwoMonth = Table.AddColumn(ColumnWeekOfYear, "TwoMonth", each if Number.Mod([Month],2) = 0 then [Month]/2 else ([Month]+1)/2, Int64.Type),
+    ColumnQuarter = Table.AddColumn(ColumnTwoMonth, "Quarter", each Date.QuarterOfYear([Date]), Int64.Type),
+    ColumnHalfYear = Table.AddColumn(ColumnQuarter, "HalfYear", each if [Month] <= 6 then 1 else 2, Int64.Type),
+    ColumnYearMonthNumber = Table.AddColumn(ColumnHalfYear, "YearMonthNumber", each Number.FromText(Date.ToText([Date], "yyyyMM")), Int64.Type),
+    ColumnDateSerial = Table.AddColumn(ColumnYearMonthNumber, "DateSerial", each Number.FromText(Date.ToText([Date], "yyyyMMdd")), Int64.Type)
+in
+    ColumnDateSerial
