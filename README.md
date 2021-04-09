@@ -7,7 +7,6 @@
 Linkedin: [Hugo Kenzo Ogata](https://www.linkedin.com/in/hugo-kenzo-ogata-72888896/)
 ***
 ___
-
 __Temas, Fundos e Personalização__
 - Gerar Temas Json - https://themes.powerbi.tips/
 - Galeria de temas - https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery
@@ -16,7 +15,7 @@ __Temas, Fundos e Personalização__
 - Emojis - https://getemoji.com/ 
 - Emojis - In Windows 10 [Windows Key + .] ou (Windows Key + ç)
 - Layouts - https://powerbi.tips/tools/layouts/
-
+- Remover Fundo - https://www.picpng.com/
 ___
 
 __Imagens__
@@ -26,7 +25,11 @@ __Imagens__
 - https://morguefile.com/
 - https://br.freepik.com/
 - https://graphicburger.com/
-
+- https://pt.pngtree.com/
+- http://www.pngall.com/
+- https://www.stickpng.com/
+- https://pluspng.com/
+- http://pngimg.com/
 ___
 
 __Criar Paleta de Cores__
