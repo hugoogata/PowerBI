@@ -40,6 +40,7 @@ __Criar Paleta de Cores__
 - https://flatuicolors.com/
 - https://www.colors.lol/
 - https://mycolor.space/
+- https://themes.powerbi.tips/
 
 ___
 
