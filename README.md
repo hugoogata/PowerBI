@@ -16,6 +16,7 @@ __Temas, Fundos e Personalização__
 - Emojis - In Windows 10 [Windows Key + .] ou (Windows Key + ç)
 - Layouts - https://powerbi.tips/tools/layouts/
 - Remover Fundo - https://www.picpng.com/
+- Design - https://www.figma.com/
 ___
 
 __Imagens__
