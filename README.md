@@ -6,6 +6,9 @@
 
 Linkedin: [Hugo Kenzo Ogata](https://www.linkedin.com/in/hugo-kenzo-ogata-72888896/)
 ***
+
+__Fontes__
+- Google Fonts - https://fonts.google.com/
 ___
 __Temas, Fundos e Personalização__
 - Gerar Temas Json - https://themes.powerbi.tips/
