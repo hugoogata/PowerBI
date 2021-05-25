@@ -47,6 +47,7 @@ __Criar Paleta de Cores__
 - https://mycolor.space/
 - https://themes.powerbi.tips/
 - https://colorhunt.co/
+- https://uigradients.com/
 
 ___
 
