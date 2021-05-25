@@ -15,6 +15,7 @@ __Temas, Fundos e Personalização__
 - Galeria de temas - https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery
 - Temas - https://alluringbi.com/gallery/
 - Modelos de Dashboards - http://www.powerbiarte.com.br/
+- Modelos de Dashboards - https://dribbble.com/
 - Emojis - https://getemoji.com/ 
 - Emojis - In Windows 10 [Windows Key + .] ou (Windows Key + ç)
 - Layouts - https://powerbi.tips/tools/layouts/
@@ -45,6 +46,7 @@ __Criar Paleta de Cores__
 - https://www.colors.lol/
 - https://mycolor.space/
 - https://themes.powerbi.tips/
+- https://colorhunt.co/
 
 ___
 
