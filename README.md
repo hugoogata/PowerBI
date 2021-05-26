@@ -20,6 +20,7 @@ __Temas, Fundos e Personalização__
 - Emojis - In Windows 10 [Windows Key + .] ou (Windows Key + ç)
 - Layouts - https://powerbi.tips/tools/layouts/
 - Remover Fundo - https://www.picpng.com/
+- Remover Fundo - https://www.remove.bg/pt-br
 - Design - https://www.figma.com/
 ___
 
@@ -35,6 +36,9 @@ __Imagens__
 - https://www.stickpng.com/
 - https://pluspng.com/
 - http://pngimg.com/
+- https://pixabay.com/pt/
+- https://unsplash.com/
+- 
 ___
 
 __Criar Paleta de Cores__
@@ -69,6 +73,11 @@ __Baixar Ícones__
 - https://undraw.co/illustrations
 - https://blush.design/pt/collections
 
+___
+
+__Músicas,Fundo Sonoros & Videos__
+- https://www.free-stock-music.com/
+- https://www.videvo.net/
 ___
 
 __Outros__
