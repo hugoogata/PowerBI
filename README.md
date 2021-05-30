@@ -38,7 +38,10 @@ __Imagens__
 - http://pngimg.com/
 - https://pixabay.com/pt/
 - https://unsplash.com/
-- 
+- https://undraw.co/illustrations
+- https://2.flexiple.com/scale/home
+- https://www.opendoodles.com/
+- https://isoflat.com/
 ___
 
 __Criar Paleta de Cores__
