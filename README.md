@@ -22,6 +22,7 @@ __Temas, Fundos e Personalização__
 - Remover Fundo - https://www.picpng.com/
 - Remover Fundo - https://www.remove.bg/pt-br
 - Design - https://www.figma.com/
+- Design - https://www.photopea.com/
 ___
 
 __Imagens__
