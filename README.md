@@ -56,7 +56,7 @@ __Criar Paleta de Cores__
 - https://themes.powerbi.tips/
 - https://colorhunt.co/
 - https://uigradients.com/
-
+- https://webgradients.com/
 ___
 
 __Baixar Ícones__
