@@ -6,17 +6,23 @@
 
 Linkedin: [Hugo Kenzo Ogata](https://www.linkedin.com/in/hugo-kenzo-ogata-72888896/)
 ***
-___
 
+__Fontes, Tipografia__
+- Google Fonts - https://fonts.google.com/
+___
 __Temas, Fundos e Personalização__
 - Gerar Temas Json - https://themes.powerbi.tips/
 - Galeria de temas - https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery
 - Temas - https://alluringbi.com/gallery/
 - Modelos de Dashboards - http://www.powerbiarte.com.br/
+- Modelos de Dashboards - https://dribbble.com/
 - Emojis - https://getemoji.com/ 
 - Emojis - In Windows 10 [Windows Key + .] ou (Windows Key + ç)
 - Layouts - https://powerbi.tips/tools/layouts/
-
+- Remover Fundo - https://www.picpng.com/
+- Remover Fundo - https://www.remove.bg/pt-br
+- Design - https://www.figma.com/
+- Design - https://www.photopea.com/
 ___
 
 __Imagens__
@@ -26,7 +32,17 @@ __Imagens__
 - https://morguefile.com/
 - https://br.freepik.com/
 - https://graphicburger.com/
-
+- https://pt.pngtree.com/
+- http://www.pngall.com/
+- https://www.stickpng.com/
+- https://pluspng.com/
+- http://pngimg.com/
+- https://pixabay.com/pt/
+- https://unsplash.com/
+- https://undraw.co/illustrations
+- https://2.flexiple.com/scale/home
+- https://www.opendoodles.com/
+- https://isoflat.com/
 ___
 
 __Criar Paleta de Cores__
@@ -37,7 +53,10 @@ __Criar Paleta de Cores__
 - https://flatuicolors.com/
 - https://www.colors.lol/
 - https://mycolor.space/
-
+- https://themes.powerbi.tips/
+- https://colorhunt.co/
+- https://uigradients.com/
+- https://webgradients.com/
 ___
 
 __Baixar Ícones__
@@ -58,6 +77,11 @@ __Baixar Ícones__
 - https://undraw.co/illustrations
 - https://blush.design/pt/collections
 
+___
+
+__Músicas,Fundo Sonoros & Videos__
+- https://www.free-stock-music.com/
+- https://www.videvo.net/
 ___
 
 __Outros__
