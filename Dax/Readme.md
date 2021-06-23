@@ -16,3 +16,13 @@ Ao usar o Power BI Desktop, você poderá pressionar Shift + ? para exibir os at
 - Caixa de diálogo Rostos tristes
 
 Em nosso esforço contínuo para melhorar a acessibilidade, a lista anterior de experiências também dá suporte a leitores de tela e configurações de alto contraste.
+
+ ## Atalhos usados com frequência <h2>
+  
+  | Para Executar esta ação | Pressione |
+| ------------- |:-------------:|
+| Mover o foco entre as seções    | `Ctrl + F6` |
+| Mover o foco para frente na seção      | `Tab`     |
+| Mover o foco para trás na seção    | `Shift + Tab` |
+| Selecionar ou limpar a seleção de um objeto | `Enter ou barra de espaços` |
+| Selecionar vários objetos | `Ctrl + barra de espaços` |
