@@ -83,6 +83,31 @@ Em nosso esforço contínuo para melhorar a acessibilidade, a lista anterior de 
   
   ## Editor do DAX <h2>
   
+| Para Executar esta ação | Pressione |
+| ------------- |:-------------:|
+| Ir para número de linha    | `Ctrl + G` |
+| Mover linha para cima/para baixo      | `Alt + tecla de direção para cima / Tecla de direção para baixo`     |
+| Copiar linha acima/abaixo    | `Shift + Alt + tecla de direção para cima / tecla de direção para baixo` |
+| Inserir linha abaixo | `Shift + Enter` |
+| Inserir linha acima | `Ctrl + Shift + Enter` |
+| Excluir a palavra selecionada    | `Ctrl+Del` |
+| Excluir todas as linhas selecionadas | `Ctrl+Shift+K` |
+| Ir para o colchete correspondente | -`Ctrl + Shift + \` |
+| Ir para o início de uma linha de código  | `Ctrl + Home` |
+| Ir para o final de uma linha de código      | Ctrl+End`     |
+| Recuar linha/estender linha até a margem    | `Ctrl + ] / [` |
+| Inserir o cursor | `Alt + Clique` |
+| Selecionar a linha atual | `Ctrl + I` |
+| Selecionar todas as ocorrências da seleção atual | `Ctrl + Shift + L` | 
+| Selecionar as próximas ocorrências da seleção atual    | `Ctrl + D` |
+| Selecione a linha acima   | `Shift + Seta para cima` |
+| Selecione a linha abaixo    | `Shift + Seta para baixo` | 
+| Inserir várias linhas de código acima/abaixo    | `Ctrl+Alt+Tecla de direção para cima / Tecla de direção para baixo` |
+| Comentar uma linha    | `Ctrl + / ou Ctrl + K + C` | 
+| Remover a marca de comentário de uma linha    | `Ctrl + / ou Ctrl + K + U` |
+| Aumentar o tamanho da fonte   | `Ctrl + + ou Rolar para Cima` |
+| Diminuir o tamanho da fonte   | `Ctrl + - ou Rolar para Baixo` |  
+  
   ## Inserir dados <h2>
   
 | Para Executar esta ação | Pressione |
