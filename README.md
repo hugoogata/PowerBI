@@ -14,8 +14,9 @@ __Temas, Fundos e Personalização__
 - Gerar Temas Json - https://themes.powerbi.tips/
 - Galeria de temas - https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery
 - Temas - https://alluringbi.com/gallery/
-- Modelos de Dashboards - http://www.powerbiarte.com.br/
-- Modelos de Dashboards - https://dribbble.com/
+- UX & UI - http://www.powerbiarte.com.br/
+- UX & UI - https://dribbble.com/
+- UX & UI - https://www.awwwards.com/
 - Emojis - https://getemoji.com/ 
 - Emojis - In Windows 10 [Windows Key + .] ou (Windows Key + ç)
 - Layouts - https://powerbi.tips/tools/layouts/
