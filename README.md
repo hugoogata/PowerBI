@@ -44,6 +44,7 @@ __Imagens__
 - https://2.flexiple.com/scale/home
 - https://www.opendoodles.com/
 - https://isoflat.com/
+- https://diverseui.com/
 ___
 
 __Criar Paleta de Cores__
