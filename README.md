@@ -7,6 +7,14 @@
 Linkedin: [Hugo Kenzo Ogata](https://www.linkedin.com/in/hugo-kenzo-ogata-72888896/)
 ***
 
+___
+
+__Arquitetura de dados__
+- https://excalidraw.com/
+- https://www.cloudcraft.co/
+- https://www.lucidchart.com/
+___
+
 __Fontes, Tipografia__
 - Google Fonts - https://fonts.google.com/
 ___
