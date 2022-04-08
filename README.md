@@ -13,6 +13,7 @@ __Arquitetura de dados__
 - https://excalidraw.com/
 - https://www.cloudcraft.co/
 - https://www.lucidchart.com/
+- https://googlecloudcheatsheet.withgoogle.com/
 ___
 
 __Fontes, Tipografia__
