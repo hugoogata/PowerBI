@@ -20,6 +20,7 @@ __Fontes, Tipografia__
 - Google Fonts - https://fonts.google.com/
 ___
 __Temas, Fundos e Personalização__
+__theme, Backgrounds__
 - Gerar Temas Json - https://themes.powerbi.tips/
 - Galeria de temas - https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery
 - Temas - https://alluringbi.com/gallery/
@@ -70,7 +71,8 @@ __Criar Paleta de Cores__
 - https://webgradients.com/
 ___
 
-__Baixar Ícones__
+__Ícones__
+__Icons__
 - https://icons8.com.br/
 - https://www.flaticon.com/br/
 - https://icon-icons.com/pt/
@@ -92,11 +94,13 @@ __Baixar Ícones__
 ___
 
 __Músicas,Fundo Sonoros & Videos__
+__Músic, Background, Sound & Videos__
 - https://www.free-stock-music.com/
 - https://www.videvo.net/
 ___
 
 __Outros__
+__Others__
 - Extensão Chrome rotacionar abas - https://www.bidoconceitoapratica.com.br/2019/01/09/rotacao-de-abas/
 - Melhorar exibição em TV - https://www.youtube.com/watch?v=stHD0FVsdJk
 - Configurar Syntax Highlight Notepad++ (PowerQuery) - http://sascha-kasper.com/m-aka-power-query-and-notepad/
