@@ -1,0 +1,62 @@
+Calendario =
+var tblCalendario = CALENDAR(
+    MINX(
+        UNION(
+            SELECTCOLUMNS(tabela,"data",coluna),
+            SELECTCOLUMNS(tabela,"data",coluna)
+        )
+        ,[data]
+    ),
+    Date(2020,12,31))
+Return
+ADDCOLUMNS(
+    tblCalendario,
+    "Ano",YEAR([Date]), --Extrai o Ano da coluna Date
+    "MesNro",MONTH([Date]) -- Extrai o n´mero do Mês da coluna Data (Ussado para fazer ordenação do nome do Mês)
+    "Mês",FORMAT([Date]),"mmmm"), --Extrai o nome do M^s da coluna Date
+    "Dia",DAY([DATE]), -- Extrai o numero do dia da coluna Date
+    "DiaSemanaNro",WEEKDAY([Date]), --Extrai o numero do dia da semana da coluna Date
+    "DiaSemana",SWITCH(
+        WEEKDAY([Date]),
+        1,"domingo",
+        2,"segunda",
+        3,"terça",
+        4,"quarta",
+        5,"quinta",
+        6,"sexta",
+        7,"sabado",
+    ), -- Traduz o número do dia da semana para o seu respectivo nome
+"CompetenciaNro",FORMAT([Date]),"yyymm"), --Extrai o número da compencia da coluna Date (usado para ordenar)
+"Competencia",FORMAT([Date],"mmm/yyyy"), --Extrai uma descrição mais amigável da competencia da coluna Date
+"Bimestre",CONVERT(ROUNDDOWN((MONTH([Date])-1)/2)+1,0),STRING) & "º BIMESTRE", -- Extrai o BIMESTRE
+"Trimestre",CONVERT(ROUNDDOWN((MONTH([Date])-1)/3)+1,0),STRING) & "º TRIMESTRE", -- Extrai o TRIMESTRE
+"Semestre",CONVERT(ROUNDDOWN((MONTH([Date])-1)/6)+1,0),STRING) & "º SEMESTRE", -- Extrai o SEMESTRE
+"É_DiaUtil",IF(WEEKDAY((MONTH([Date]) = 1 || WEEKDAY((MONTH([Date]) = 7, "Nao","Sim"), -- Verifica se é dia util
+"SemanaAno", WEEKNUM([Date]) -- Verifica a semana do ANO
+)
+
+Opção 2
+
+dCalendario =
+ADDCOLUMNS(
+    CALENDARAUTO(),
+    "Ano", YEAR ([Date]),
+    "Anomês nome", FORMAT ([Date], "mmm/yy"),
+    "Anomês num", FORMAT([Date], "YYYYMM"),
+    "Anomês", FORMAT([Date], "yyyy/mm"),
+    "Trim num", QUARTER([Date]),
+    "Trim nome", FORMAT([Date], "\Qq"),
+    "Mês num", MONTH([Date]),
+    "Mês nome", FORMAT([Date], "mmm"),
+    "Dia", DAY([Date]),
+    "DiadaSemana",WEEKDAY([Date],2),
+    "Semana num",WEEKDAY([Date]),
+    "Diadetrabalho", IF(WEEKDAY([Date],2)=6 || WEEKDAY([Date],2)=7,"N","S"),
+    "Ano Atual", IF(YEAR([Date])=YEAR(TODAY()),"S","N"),
+    "Dia Atual", IF(YEAR([Date])=YEAR(TODAY()) && MONTH([Date])=MONTH(TODAY()),"S","N"),
+    "Ano móvel", DATEDIFF(TODAY(),[Date], YEAR),
+    "Trim móvel", DATEDIFF(TODAY(),[Date], QUARTER),
+    "Mês móvel", DATEDIFF(TODAY(),[Date], MONTH),
+    "Semana móvel", DATEDIFF(TODAY(),[Date], week),
+    "Dia móvel", DATEDIFF(TODAY(),[Date], DAY)
+)
