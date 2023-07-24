@@ -1,0 +1,39 @@
+[ Power BI ] ÚLTIMOS 12 MESES A PARTIR DA SELEÇÃO DE UMA DATA com DAX 
+## Crie uma tabela auxiliar(pode ser Dax ou M)
+Dax:
+Selecao Data = ADDCOLUMNS(
+    CALENDARAUTO(),
+    "Anomês",FORMAT([date],"yyyy/mm")
+)
+
+## Agora como fazer uma medida com 12 ultimos dias movel
+Medida dax:
+ultimo n dias = 
+var vnperiodo = [Selecao dias]
+var vDataSelecionada=
+calculate(
+    MAX('Selecao Data'[Date]),
+    ALL(dcalendario)
+)
+
+var vResultados=
+IF(
+    AND(MAX(dcalendario[date]) > vDataSelecionada-vnperiodo, MAX(dcalendario[date])<=vDataSelecionada
+),
+[medida],
+BLANK()
+)
+return
+vResultados
+
+## Outra Medida
+Soma valor n Periodo
+SUMX(
+    SUMMARIZE(
+        dcalendario,
+        dcalendario[Date],
+        dcalendario[Anomês],
+        "Valor",[Ultimos n dias]
+    ),
+    [valor]
+)
