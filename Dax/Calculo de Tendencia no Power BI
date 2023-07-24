@@ -1,0 +1,10 @@
+Calculo de Tendencia no Power BI
+
+Medidas
+Qtd dias = DISTINCTCOUNT(Calendario[Date])
+Qtd Dias Uteis = CALCULATE([Qtd Dias]),FILTER(Calendario,Calendario[É_DiaUtil]="Sim"))
+Qtd Dias Ocorridos = CALCULATE([Qtd dias Uteis]),FILTER(Calendario,Calendario[Date]<TODAY())
+Qtd Dias Restantes = [Qtd Dias Uteis] - [Qtd Dias Ocorridos]
+Media Diario = Divide([Medida]), [Qtd Dias Ocorridos]
+Tendencia = [Medida]*[Qtd Dias Uteis] --Vai depender da sua regra de negocio, pode considerar seg a sexta, seg a sab ou todos os dias
+Meta Diaria = Divide([Medida],[Qtd Dias Restantes])
