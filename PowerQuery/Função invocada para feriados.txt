@@ -1,0 +1,10 @@
+(data as date) =>
+let
+    Ano = Text.From(Date.Year(data)),
+    Fonte = Xml.Tables(Web.Contents("https://api.calendario.com.br/?ano=" & Ano & "&estado=SP&cidade=SAO_PAULO&token=aHVnby5vZ2F0YUBvdXRsb29rLmNvbSZoYXNoPTUyMjQ3ODk")),
+    Table1 = Fonte{1}[Table],
+    #"Tipo Alterado" = Table.TransformColumnTypes(Table1,{{"date", type date}, {"name", type text}, {"type", type text}, {"type_code", Int64.Type}}),
+    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each ([Type_code] = 1 or [Type_code] = 2 or [Type_code] = 3) and [date] = data ),
+    QtdeLinhas = Table.RowCount(#"Linhas Filtradas")
+in
+   QtdeLinhas  > 0
