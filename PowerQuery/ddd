@@ -1,0 +1,5 @@
+let
+    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("XVI9b9tADP0rB89Z7DiKPNpK7SJoAiEOvAQZaOlqX3E6CiepQ/5N2qmDJ/+E+2Plh5winUTdeyQfH/nyMllW0U6uJk8OzSpCqJB+snzyekWQhwNCRw8PUFmXzhTlM4UaaNO7ImO0yC7IG4YxK8DAwUKTVnB0QL9b8D+hxkjh7VSQwkKUImuMPXj7xrRcVdy5ro+uR7O2tY3gCSGhXTp5KZZphS9dm05C20LoeYid69M5Cmd2K5wNuvTOejj4FTRdpT0AzX5MvzlxSx/zbUgnkZ6POFXeROw6ZhSDg73ozW7+h01NEgZWWUDT8iuEmh3O50p1ZI7Z0CSO66+sR/MVoyPTeqZd6zwlC5IWxUBjuT2Lnf/D0kle7pHFlpYai2XXF4KkUvH0p+EpxkQbAzT7QZb8ZCv3XYSNoAOamf6fbbQdqWRId8rHUVtzD8G6iOO1fHqYTT+IOjDb8EjL5AaP0MvaRgc+k9Srkqholt4e5BpvxnIYatQ9KWFn/VEOdDHi5GLD8ArB7OhQOF7oTvgOwBTUO+owa082k6nnFr14P9fdbm08uJbbLiNd84+B71IbyCmUMPiPu7j8TFXhM1bUxgUuV4Jv5O4z2sLrXw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Estado = _t, Capital = _t, DDD = _t]),
+    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Estado", type text}, {"Capital", type text}, {"DDD", Int64.Type}})
+in
+    #"Tipo Alterado"
